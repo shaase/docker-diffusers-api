@@ -1,8 +1,8 @@
-# ARG FROM_IMAGE="gadicc/diffusers-api-base:python3.9-pytorch1.12.1-cuda11.6-xformers"
+ARG FROM_IMAGE="gadicc/diffusers-api-base:python3.9-pytorch1.12.1-cuda11.6-xformers"
 # You only need the -banana variant if you need banana's optimization
 # i.e. not relevant if you're using RUNTIME_DOWNLOADS
 # BUMP: 1
-ARG FROM_IMAGE="gadicc/python3.9-pytorch1.12.1-cuda11.6-xformers-banana"
+# ARG FROM_IMAGE="gadicc/python3.9-pytorch1.12.1-cuda11.6-xformers-banana"
 FROM ${FROM_IMAGE} as base
 ENV FROM_IMAGE=${FROM_IMAGE}
 
