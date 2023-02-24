@@ -64,7 +64,7 @@ COPY api/ .
 EXPOSE 8000
 
 # Model id, precision, etc.
-ARG MODEL_ID="stabilityai/stable-diffusion-2-1-base"
+ARG MODEL_ID
 ENV MODEL_ID=${MODEL_ID}
 # ARG HF_MODEL_ID=""
 # ENV HF_MODEL_ID=${HF_MODEL_ID}
